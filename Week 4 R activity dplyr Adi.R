@@ -45,7 +45,7 @@ titanicdata_withgender %>% arrange(Gender)
 #TASK: Sum the Freq column
 #TASK: After you run it, write the total here:__2201___
 sum_freq <- titanicdata %>% summarize(SumFreq = sum(Freq))
-print(10*sum_freq[1,"SumFreq"])
+print(sum_freq[1,"SumFreq"])
 
 specific_value <- sum_freq %>% pull(SumFreq[0])
 #Since we have a males dataset, let's make a females dataset
